@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.footer-div {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #253342; /* Defina a cor de fundo conforme necessário */
+    padding: 10px 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9e1e4c;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-a {
+    text-decoration: none;
+    color: #fedcba;
+    margin: 0 10px; /* Espaçamento entre os links e o texto */
+}
+
+.button p {
+    color: #fedcba;
+    margin: 0;
+}

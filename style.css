@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #253342;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: #fedcba;
+}
+
+.main-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.content-button{
+    padding: 5px;
+    width: 200px; /* Defina a largura desejada para o botão */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.butao {
+    background-color: #fedcba;
+    color: #9e1e4c;
+    border-radius: 60px;
+    padding: 10px;
+    width: 200px; /* Defina a largura desejada para o botão */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.butao:hover {
+    background-color: #d6326a; /* Nova cor de fundo ao passar o mouse */
+}
+
+.heart-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.heart {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transform: rotate(-45deg);
+    margin-top: -75px;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 25px;
+}
+
+/* PARTE DA DIV OCULTA */
+.hidden-p{
+    color: #253342;
+}
+
+.button-1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #253342; 
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.button {
+    padding: 10px;
+    width: 200px; /* Defina a largura desejada para o botão */
+    margin: 0 auto; /* Centraliza horizontalmente */ 
+    border-radius: 20px;
+    background-color: #fedcba;
+    font-size: 15px;
+}
+
+.button a {
+    display: flex;
+    text-decoration: none;
+    color: #9e1e4c;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #253342;
+    color: white;
+    z-index: 1000; /* Certifique-se de que a div esteja acima de outros elementos */
+}
+
+
+.hidden-content {
+    display: none;
+
+}
+
